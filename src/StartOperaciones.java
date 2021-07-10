@@ -20,7 +20,6 @@ public class StartOperaciones {
 		
 		System.out.println("");
 		System.out.print("---MENÚ---");
-		opcion=sc.nextInt();
 		System.out.println("");
 		System.out.println("1) Suma");
 		System.out.println("2) Resta");
@@ -28,24 +27,31 @@ public class StartOperaciones {
 		System.out.println("4) División");
 		System.out.println("");
 		System.out.print("Elija una opción: ");
-
-		//SUMA
-		resultadoSuma=num1+num2;
-		System.out.println("El restultado de "+num1+ " + "+num2+" es: "+resultadoSuma);
+		opcion=sc.nextInt();
 		
-		//RESTA
-		resultadoResta=num1-num2;
-		System.out.println("El restultado de "+num1+ " - "+num2+" es: "+resultadoResta);
+		if (opcion==1) {
+			//SUMA
+			resultadoSuma=num1+num2;
+			System.out.println("El restultado de "+num1+ " + "+num2+" es: "+resultadoSuma);
+		}
 
-		//Multiplicacion
-		resultadoMultiplicacion=num1*num2;
-		System.out.println("El restultado de "+num1+ " * "+num2+" es: "+resultadoMultiplicacion);
+		if (opcion==2) {
+			//RESTA
+			resultadoResta=num1-num2;
+			System.out.println("El restultado de "+num1+ " - "+num2+" es: "+resultadoResta);
+		}
 		
-		//Division
-		resultadoDivision=num1/num2;
-		System.out.println("El restultado de "+num1+ " / "+num2+" es: "+resultadoDivision);
-
+		if (opcion==3) {
+			//Multiplicacion
+			resultadoMultiplicacion=num1*num2;
+			System.out.println("El restultado de "+num1+ " * "+num2+" es: "+resultadoMultiplicacion);
+		}
 		
+		if (opcion==4) {
+			//Division
+			resultadoDivision=num1/num2;
+			System.out.println("El restultado de "+num1+ " / "+num2+" es: "+resultadoDivision);
+		}
 		
 		
 	}
